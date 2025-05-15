@@ -4,8 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Investigação Digital - Hacker Ético</title>
+  <meta name="description" content="Recuperação de contas, investigação digital e segurança cibernética com ética e confiança.">
+<meta name="keywords" content="recuperar conta, hacker ético, segurança digital, investigação, cibersegurança, whatsapp">
+<meta name="author" content="Hacker Ético">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  
   <link rel="stylesheet" href="assets/css/style.css"/>
   <script src="assets/js/script.js" defer></script>
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DL2KB0PEZW');
+</script>
+
 </head>
 <body>
   <header>
@@ -49,6 +63,12 @@
   </section>
 
   <section id="contato">
+    <form onsubmit="sendToWhatsApp(); return false;">
+  <input type="text" id="name" placeholder="Seu nome" required>
+  <input type="text" id="service" placeholder="Serviço desejado" required>
+  <button type="submit">Solicitar Atendimento via WhatsApp</button>
+</form>
+
     <h2>Contato</h2>
     <p>WhatsApp: <a href="https://wa.me/5537991410044">+55 37 99141-0044</a></p>
     <p>WhatsApp: <a href="https://wa.me/5561993206595">+55 61 99320-6595</a></p>
@@ -61,5 +81,15 @@
   </footer>
 
   <a href="https://wa.me/5537991410044" class="whatsapp-float" target="_blank">💬</a>
+  <script>
+  function sendToWhatsApp() {
+    var name = document.getElementById('name').value;
+    var service = document.getElementById('service').value;
+    var message = `Olá, meu nome é ${name} e quero informações sobre: ${service}`;
+    var url = `https://wa.me/5537991410044?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+</script>
+
 </body>
 </html>
