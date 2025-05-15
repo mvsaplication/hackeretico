@@ -1,0 +1,75 @@
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.logo {
+  color: #00ffcc;
+  font-size: 1.5em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  text-align: center;
+  padding: 3em 1em;
+}
+.hero h1 {
+  color: #00ffcc;
+  font-size: 2.5em;
+}
+.btn {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 2em;
+  background: #00ffcc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 2em;
+}
+.card {
+  background: #111;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+footer {
+  background: #111;
+  padding: 1em;
+  text-align: center;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  padding: 1em;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  text-decoration: none;
+}
